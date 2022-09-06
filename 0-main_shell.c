@@ -1,4 +1,10 @@
 #include "shell.h"
+/**
+ * main - nain for simple shell
+ * @argc: argumanet counter
+ * @argv: argument value
+ * Return: 1 success.
+ */
 
 int main(int argc __attribute__ ((unused)), char **argv)
 {

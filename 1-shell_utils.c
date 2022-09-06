@@ -1,5 +1,8 @@
 #include "shell.h"
-
+/**
+ * ctrl_C - contol function that siganl end of transmission
+ * @signum: the signal value
+ */
 void ctrl_C(int signum)
 {
 	if (signum == SIGINT)
@@ -13,8 +16,7 @@ void ctrl_C(int signum)
  */
 char *_getline(void)
 {
-	int bufSize = BUFSIZE;
-	int no_read, position = 0;
+	int bufSize = BUFSIZE, no_read, position = 0;
 
 	char *buffer = malloc(bufSize * sizeof(char));
 	char c;
@@ -38,7 +40,7 @@ char *_getline(void)
 		else if (c == '\n' || !no_read)
 		{
 			buffer[position] = '\0';
-			return(buffer);
+			return (buffer);
 		}
 		else
 			buffer[position] = c;
@@ -59,8 +61,8 @@ int is_delimeter(const char *delimeter, char c);
 /**
  * tokenize - Tokenize a string
  * @str: string to be tokenize
- * @delim: character to tokenize str
- * Return: pointer 
+ * @delim: character to tokenize
+ * Return: pointer
  */
 char **tokenize(char *str, const char *delim)
 {
@@ -119,6 +121,11 @@ int is_delimeter(const char *delimeter, char c)
 	}
 	return (0);
 }
+/**
+ * shell_execute - check the parsed command
+ * @cmd_type: check the command
+ * @command: command parsed
+ */
 void shell_execute(char **command, int cmd_type)
 {
 	int stat;
