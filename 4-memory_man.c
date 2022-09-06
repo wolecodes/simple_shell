@@ -1,5 +1,11 @@
 #include "shell.h"
-
+/**
+ * *_realloc- reallocate memory using malloc and free
+ * @ptr: pointer
+ * @old: the old size
+ * @new: the new size
+ * Return: return the void pointer else null
+ */
 void *_realloc(void *ptr, int old, int new)
 {
 	void *tmp;
@@ -11,7 +17,7 @@ void *_realloc(void *ptr, int old, int new)
 		return (ptr);
 	else if (new == 0 && ptr)
 	{
-		free (ptr);
+		free(ptr);
 		return (NULL);
 	}
 	else

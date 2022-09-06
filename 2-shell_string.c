@@ -1,5 +1,9 @@
 #include "shell.h"
-
+/**
+ * _strlen - get the lenght of the string
+ * @str: char pointer
+ * Return: 1
+ */
 int _strlen(char *str)
 {
 	int i = 0;
@@ -8,7 +12,12 @@ int _strlen(char *str)
 		i++;
 	return (i);
 }
-
+/**
+ * _strcmp - compare two strings
+ * @str1: first string
+ * @str2: second string
+ * Return: identical strings ot otherwise
+ */
 int _strcmp(char *str1, char *str2)
 {
 	int len1 = _strlen(str1);
