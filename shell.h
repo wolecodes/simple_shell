@@ -29,9 +29,8 @@ typedef struct internal_func
 
 /** builtin command **/
 void change_dir(char **);
-void dis_env(char **);
-void quit(char **);
-
+/**void dis_env(char **); */
+/**void quit(char **); */
 /** SHELL UTILITES FUNCTION **/
 void ctrl_C(int);
 char *_getline(void);
