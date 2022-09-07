@@ -1,5 +1,3 @@
-
-=======
 ## Simple Shell
 > In this project, we coded from scatch a simple Unix shell. A shell is an interactive
 > command-line interpreter. We created a shell that would utilize the command line
@@ -113,4 +111,5 @@ $ exit
 
 ---
 ### Authors
->>>>>>> a72efcdcd696f09b6264072cc49449692b120170
+Toheeb Oyeyemi
+Bakare Rilwan
