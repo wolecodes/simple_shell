@@ -13,12 +13,4 @@ void dis_env(char **command __attribute__((unused)))
 		printer("\n", STDOUT_FILENO);
 	}
 }
-void quit(char **command)
-{
-	(void) command;
-}
 
-void change_dir(char **command)
-{
-	(void) command;
-}
