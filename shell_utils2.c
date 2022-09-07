@@ -1,5 +1,9 @@
 #include "shell.h"
-
+/**
+ * check_command- check the command
+ * @command: the command to be checked
+ * Return: constant variable representing the type of command
+ */
 int check_command(char *command)
 {
 	int i = 0;
@@ -21,7 +25,11 @@ int check_command(char *command)
 	}
 	return (INVALID_CMD);
 }
-
+/**
+ * execute- execute the shell
+ * @commands: command to be execute
+ * @cmd_type: type of the command to be executed
+ */
 void execute(char **commands, int cmd_type)
 {
 	void (*func)(char **command);
